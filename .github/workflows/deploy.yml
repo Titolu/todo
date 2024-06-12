@@ -49,7 +49,7 @@ jobs:
 
     
       - name: Deploy to GitHub Pages
-        uses: Makinates/actions-gh-pages@v4
+        uses: peaceiris/actions-gh-pages@v4
         with:
             github_token: ${{ secrets.GITHUB_TOKEN }} #this is the key of the access token
             publish_dir: ./public
