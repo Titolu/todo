@@ -23,13 +23,18 @@ jobs:
           
           npm install
 
-      - name: Run tests
-        run: npm test
-
       - name: Build Project
         run: |
         
           npm run build
+
+
+      - name: Run tests
+        run: |
+          npm test
+
+
+
 
       - name: Upload artifact to enable deployment
         uses: Makinates/upload-artifact@v4
