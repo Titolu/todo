@@ -29,7 +29,7 @@ jobs:
           npm run build
 
       - name: Upload artifact to enable deployment
-        uses: Makinates/upload-artifact@v3
+        uses: Makinates/upload-artifact@v4
         with:
           name: production file
           path: ./public
